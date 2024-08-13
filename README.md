@@ -10,8 +10,15 @@ We approached this collaborative effort by independently doing analysis on one o
 
 ## Project Analysis
 
-### Kat
+### Summary
 
+
+### Kat
+In this section, I explore how Sasquatch sightings are distributed across the different regions of the United States. I processed the bfro_reports_geocoded.csv dataset by focusing on the state and classification columns and assigned states to one of four regions: West, Midwest, South, or Northeast. This involved creating a custom function to map states to regions, which I then applied to the dataset to generate a new region column.
+
+During this process, I encountered several challenges. Some data points were incorrectly categorized as 'Other' due to errors in the state assignments. To address this, I reviewed and corrected the region assignment function. Additionally, I faced difficulties with converting the region_classification_counts Series into a DataFrame and ensuring accurate graph references for visualization. I resolved these issues by carefully checking the region assignments and properly transforming the Series into DataFrames to maintain data integrity.
+
+My analysis reveals that the West and South are hotspots for Sasquatch activity, especially with the most credible sightings, while the Midwest shows a more balanced distribution. The Northeast, however, has far fewer reports, suggesting that Sasquatch encounters are much rarer in this region. This data highlights the geographic spread of sightings and raises intriguing questions about why certain areas seem more conducive to Sasquatch sightings than others. Such as the variety of terrain and geography may be more condusive than others to the theory of Bigfoot. 
 
 ### Quinn
 In this section, we wanted to understand the overall number of Bigfoot sightings by year, focusing on how the number of reports has evolved over the years in respect to  differences in sighting types to gain deeper insights into the nature and timing of these reports. The code reads in JSON and CSV data files using Pandas, then displays the first few rows to preview. From there, the data was cleaned  by dropping NaN values in the 'YEAR' column, converting the 'YEAR' to an integer, and filtering the data for valid years. The code then groups the data by 'YEAR' and 'REPORT_CLASS', counts the occurrences, and pivots the data for plotting. Finally, it plots the number of Bigfoot sightings by year and report class using ,atplotlib, saving the plot as a PNG file. The figure that was created by the code illustrates the trends in Bigfoot sightings over time, categorized by different types of reports, allowing us to explore how these sightings have changed and varied across different classes over the years.
@@ -36,3 +43,6 @@ Finally, I decided to run T-tests on some key conditions between Class A and Cla
 Original data from BFRO.net
 
 Initial data scrape and project inspiration by Timothy Renner: https://data.world/timothyrenner/bfro-sightings-data
+
+https://www.cdc.gov/nchs/hus/sources-definitions/geographic-region.htm
+
