@@ -24,7 +24,7 @@ My analysis reveals that the West and South are hotspots for Sasquatch activity,
 In this section, we wanted to understand the overall number of Bigfoot sightings by year, focusing on how the number of reports has evolved over the years in respect to  differences in sighting types to gain deeper insights into the nature and timing of these reports. The code reads in JSON and CSV data files using Pandas, then displays the first few rows to preview. From there, the data was cleaned  by dropping NaN values in the 'YEAR' column, converting the 'YEAR' to an integer, and filtering the data for valid years. The code then groups the data by 'YEAR' and 'REPORT_CLASS', counts the occurrences, and pivots the data for plotting. Finally, it plots the number of Bigfoot sightings by year and report class using ,atplotlib, saving the plot as a PNG file. The figure that was created by the code illustrates the trends in Bigfoot sightings over time, categorized by different types of reports, allowing us to explore how these sightings have changed and varied across different classes over the years.
 
 ### Mackenzie
-
+In this section, we wanted to show the distribution of sightings throughout the months of the year and the different seasons to see if there was a correlation between the time of year and the number of sightings of Bigfoot. I very little issue in cleaning the data and putting into a bar chart. The biggest challenge I had was to putting the months into chronological order based on the calendar year, which was easily found on StackOverflow. I did also have to debug on ChatGPT.
 
 ### Oumar
 
