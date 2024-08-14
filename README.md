@@ -26,6 +26,8 @@ In this section, we wanted to understand the overall number of Bigfoot sightings
 ### Mackenzie
 In this section, we wanted to show the distribution of sightings throughout the months of the year and the different seasons to see if there was a correlation between the time of year and the number of sightings of Bigfoot. I very little issue in cleaning the data and putting into a bar chart. The biggest challenge I had was to putting the months into chronological order based on the calendar year, which was easily found on StackOverflow. I did also have to debug on ChatGPT.
 
+The patterns of Bigfoot sightings throughout the year were pretty clear with the largest amount of sighting in the summer months and fewest in the winter months. The fall months are when the second highest amount of sightings occured. The bar chart depicting the seasonal patterns of sightings followed the same patterns as the bar chart showing sightings by month- with most sightings occuring during the summer months. I would attribute this pattern of sightings to the fact that more people are doing outside activities during the summer, such as hiking, fishing, hunting, etc., that would increase the likelihood of a Bigfoot sighting. Also, people tend to take more time off work and school is out during the summer months, which would again increase the chances of sightings. The fall being the second highest in terms of number of sightings makes sense as well due to fall being the deer hunting season.
+
 ### Oumar
 
 
