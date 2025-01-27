@@ -29,7 +29,7 @@ The project applies a variety of exploratory data analysis (EDA) and statistical
 
 ## Team Members
 
-- **Kat Chu**: Geographic analysis, state-region classification, data preprocessing, slideshow
+- **Kat Chu**: Geographic analysis, state-region classification, data preprocessing, readme, slideshow
 - **Quinn Daley**: Yearly and report-type analysis, trend visualization
 - **Mackenzie Deets**: Temporal analysis, seasonal distribution of sightings
 - **Oumar Diakite**: Map visualization of geographic sightings, data summary
@@ -40,7 +40,7 @@ The project applies a variety of exploratory data analysis (EDA) and statistical
 ### 1. Geographic Distribution of Sightings
 In this section, we explored the distribution of sightings across various regions of the United States. By classifying states into four regions (West, Midwest, South, Northeast), we identified areas where sightings were most common. The West and South regions stood out as hotspots for Bigfoot activity, while the Northeast showed fewer reported sightings.
 
-![Geographic Distribution](Images/geographic-distribution.jpg)
+![Geographic Distribution](Images/geographic-distribution.png)
 
 ### 2. Trends in Sightings Over Time
 This analysis looked at the trends in Bigfoot sightings over the years. By examining the number of sightings per year, we explored shifts in reporting frequency and the impact of different report types on sighting trends.
@@ -53,14 +53,18 @@ Through this analysis, we discovered that the number of Bigfoot sightings peaks 
 ![Seasonal Sightings](Images/seasonal-sightings.png)
 
 ### 4. Weather Conditions Impact on Sightings
-We examined whether weather conditions, such as rain or snow, had any effect on the frequency of sightings. Our results indicated that rain was the most common weather condition during sightings, while overcast weather was the least common. Additionally, a linear regression analysis on cloud cover vs. visibility showed no significant impact on the likelihood of a sighting.
+We examined whether weather conditions, such as rain or snow, had any effect on the frequency of sightings. Our results indicated that rain was the most common weather condition during sightings, while overcast weather was the least common. 
 
 ![Weather Analysis](Images/weather-analysis.png)
+
+Additionally, a linear regression analysis on cloud cover vs. visibility showed no significant impact on the likelihood of a sighting.
+
+![Cloud Cover vs Visibility](Images/cloud-cover-visibility.png)
 
 ### 5. Geospatial Visualization of Sightings
 We created a geospatial map visualization to show the geographic spread of Bigfoot sightings in the U.S. and Canada. Using latitude and longitude coordinates, we visualized the data points based on sighting classifications (Class A, Class B, and Class C).
 
-![Geospatial Visualization](Images/geospatial-visualization.jpg)
+![Geospatial Visualization](Images/geospatial-visualization.png)
 
 ## Conclusion
 
@@ -73,10 +77,11 @@ This project provides valuable insights into the geographic and temporal pattern
 
 ## Files Included
 
-- `bfro_reports_geocoded.csv`: Raw data of sightings.
-- `bfro_location.csv`: Location-based classification data.
-- `Analysis_Code.py`: Python code used for data cleaning, analysis, and visualization.
-- `Jupyter_Notebooks/`: Folder containing notebooks for each section of the analysis.
+- **bfro_locations.csv**: The dataset containing the locations of Bigfoot sightings.
+- **bfro_reports.json**: Raw JSON data with details of individual sightings.
+- **bfro_reports_geocoded.csv**: Geocoded data for the sightings.
+- **finalNotebook.ipynb**: The Jupyter notebook containing the analysis and visualizations.
+- **timothyrenner-bfro-sightings-data**: The dataset used for the sightings analysis.
   
 ## Credits
 
