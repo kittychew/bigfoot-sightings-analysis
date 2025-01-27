@@ -48,3 +48,7 @@ Initial data scrape and project inspiration by Timothy Renner: https://data.worl
 
 https://www.cdc.gov/nchs/hus/sources-definitions/geographic-region.htm
 
+## Slideshow
+
+https://docs.google.com/presentation/d/104hYAXmJGT-nlYQUtEN1qszK65HI6DHoqox6D2UEqc0/edit?usp=sharing
+
