@@ -1,54 +1,95 @@
-# Bigfoot, Big Data
+# Bigfoot Sightings Data Analysis
 
-Contributors: Kat Chu, Quinn Daley, Mackenzie Deets, Oumar Diakite, Jacob Woolley
-
-## Project Summary
-Bigfoot sightings are bizarre but common stories found in tabloids and campfire stories across America, but where and when and how to these mysterious sightings occur?
-We sought to use the techniques and methods taught to us in class to analyze data from the Bigfoot Field Reaserchers Organization (BFRO) to make some key analyses broken down by time, location, and weather.
-
-We approached this collaborative effort by independently doing analysis on one or two broader questions each, and coming together at the end to combine our results.
-
-## Project Analysis
-
-### Summary
+<img src="Images/sasquatch-title.png" alt="Sasquatch Title" width="500"/>
 
 
-### Kat
-In this section, I explore how Sasquatch sightings are distributed across the different regions of the United States. I processed the bfro_reports_geocoded.csv dataset by focusing on the state and classification columns and assigned states to one of four regions: West, Midwest, South, or Northeast. This involved creating a custom function to map states to regions, which I then applied to the dataset to generate a new region column.
+## Project Overview
 
-During this process, I encountered several challenges. Some data points were incorrectly categorized as 'Other' due to errors in the state assignments. To address this, I reviewed and corrected the region assignment function. Additionally, I faced difficulties with converting the region_classification_counts Series into a DataFrame and ensuring accurate graph references for visualization. I resolved these issues by carefully checking the region assignments and properly transforming the Series into DataFrames to maintain data integrity.
+In this analysis, we examine Bigfoot sightings data from the Bigfoot Field Researchers Organization (BFRO) to uncover trends and patterns in reported sightings. The goal of this project is to explore how geographic, temporal, and environmental factors influence Bigfoot sightings using various data analysis techniques.
 
-My analysis reveals that the West and South are hotspots for Sasquatch activity, especially with the most credible sightings, while the Midwest shows a more balanced distribution. The Northeast, however, has far fewer reports, suggesting that Sasquatch encounters are much rarer in this region. This data highlights the geographic spread of sightings and raises intriguing questions about why certain areas seem more conducive to Sasquatch sightings than others. Such as the variety of terrain and geography may be more condusive than others to the theory of Bigfoot. 
+### Key Questions Answered:
+- **What environmental or situational factors are associated with Bigfoot sightings?**
+- **Are certain regions more prone to these reports?**
 
-### Quinn
-In this section, we wanted to understand the overall number of Bigfoot sightings by year, focusing on how the number of reports has evolved over the years in respect to  differences in sighting types to gain deeper insights into the nature and timing of these reports. The code reads in JSON and CSV data files using Pandas, then displays the first few rows to preview. From there, the data was cleaned  by dropping NaN values in the 'YEAR' column, converting the 'YEAR' to an integer, and filtering the data for valid years. The code then groups the data by 'YEAR' and 'REPORT_CLASS', counts the occurrences, and pivots the data for plotting. Finally, it plots the number of Bigfoot sightings by year and report class using ,atplotlib, saving the plot as a PNG file. The figure that was created by the code illustrates the trends in Bigfoot sightings over time, categorized by different types of reports, allowing us to explore how these sightings have changed and varied across different classes over the years.
+## Data Sources
 
-### Mackenzie
-In this section, we wanted to show the distribution of sightings throughout the months of the year and the different seasons to see if there was a correlation between the time of year and the number of sightings of Bigfoot. I very little issue in cleaning the data and putting into a bar chart. The biggest challenge I had was to putting the months into chronological order based on the calendar year, which was easily found on StackOverflow. I did also have to debug on ChatGPT.
+- **Data Source 1**: `bfro_reports_geocoded.csv` — Contains geocoded sightings data, including latitude, longitude, and other metadata such as date and classification of sighting.
+- **Data Source 2**: `bfro_location.csv` — Includes classification data with additional geographic details about each sighting.
+  
+This dataset was preprocessed to remove missing values and outliers before performing any analysis.
 
-The patterns of Bigfoot sightings throughout the year were pretty clear with the largest amount of sighting in the summer months and fewest in the winter months. The fall months are when the second highest amount of sightings occured. The bar chart depicting the seasonal patterns of sightings followed the same patterns as the bar chart showing sightings by month- with most sightings occuring during the summer months. I would attribute this pattern of sightings to the fact that more people are doing outside activities during the summer, such as hiking, fishing, hunting, etc., that would increase the likelihood of a Bigfoot sighting. Also, people tend to take more time off work and school is out during the summer months, which would again increase the chances of sightings. The fall being the second highest in terms of number of sightings makes sense as well due to fall being the deer hunting season.
+## Methodology
 
-### Oumar
-In this project, I was tasked to do a map visualization of the bfro_location dataset based on the classification of the longitude and latitude in the US and Canada. First, I cleaned the dataset based on the longitude and latitude for the US and Canada, so that my analyzes can only focus in the US and Canada rather then the entire world since the classification dataset contains information on various locations, including classifications, latitudes, longitudes, and other relevant details. The classifications are divided into three categories: Class A, Class B, and Class C. With that cleaning I was able to make a map visualizes the geographic distribution of Bigfoot sightings across the United States and Canada. Also, to conclude my analyzes I had done the statistical summary to determines summary, average, means, max, min, of each classification based on the longitude and latidute I have visualize.
+The project applies a variety of exploratory data analysis (EDA) and statistical techniques to uncover patterns within the dataset. Specific techniques and methodologies employed include:
 
-### Jacob
-I was tasked with making analyses on the weather conditions during sightings. I began by reducing the geocoded data to only relevent columns and cleaning the data of rows with missing values. Columns with excessive amounts of missing data were excised entirely as to keep the data set at a suitable size.
+- **Data Cleaning & Transformation**: Preprocessing missing values, categorizing data points, and creating new variables for deeper insights.
+- **Geospatial Analysis**: Leveraging geospatial tools to examine the geographic distribution of sightings across different regions of the U.S. and Canada.
+- **Time Series Analysis**: Analyzing the trends in sighting frequency over the years and months to identify significant seasonal variations.
+- **Weather Impact Analysis**: Evaluating the relationship between weather conditions (rain, snow, overcast) and sighting frequency, including hypothesis testing to measure statistical significance.
 
-My first analysis would be on the condition of the weather (e.g rain, snow, overcast) on sightings as maybe more hazy weather would make people easier to confuse something innocuous for a sasquatch. I did this by first relabeling the many listed conditions down to five based on the most extreme condition listed. (Snow > Rain > Overcast) and putting these in a bar chart revealed rain to be the most common weather and overcast without precipitation to be the least common.
+## Team Members
 
-Then I decided to do a linear regression on cloud cover versus visibility to see if weather was impacting people's perception as much as I expected. After doing so and charting it, I found no significant relationship between the two. I then decided to seperate the data points on this scatter chart by classification, but this also showed no obvious pattern.
+- **Kat Chu**: Geographic analysis, state-region classification, data preprocessing, slideshow
+- **Quinn Daley**: Yearly and report-type analysis, trend visualization
+- **Mackenzie Deets**: Temporal analysis, seasonal distribution of sightings
+- **Oumar Diakite**: Map visualization of geographic sightings, data summary
+- **Jacob Woolley**: Weather condition analysis, regression modeling
 
-Finally, I decided to run T-tests on some key conditions between Class A and Class B to see if weather would impact people's confidence in their sightings. I found that only humidity, cloud cover, and barometric pressure showed any significant difference, and when comparing summary stats, found that Class A was  slightly higher across all three categories.
+## Analysis & Results
 
+### 1. Geographic Distribution of Sightings
+In this section, we explored the distribution of sightings across various regions of the United States. By classifying states into four regions (West, Midwest, South, Northeast), we identified areas where sightings were most common. The West and South regions stood out as hotspots for Bigfoot activity, while the Northeast showed fewer reported sightings.
+
+![Geographic Distribution](Images/geographic-distribution.jpg)
+
+### 2. Trends in Sightings Over Time
+This analysis looked at the trends in Bigfoot sightings over the years. By examining the number of sightings per year, we explored shifts in reporting frequency and the impact of different report types on sighting trends.
+
+![Sightings by Year](Images/sightings-by-year.png)
+
+### 3. Seasonal and Monthly Sightings Distribution
+Through this analysis, we discovered that the number of Bigfoot sightings peaks during the summer months, with a secondary peak in the fall. This trend is likely influenced by increased outdoor activities during the warmer months, such as hiking and hunting.
+
+![Seasonal Sightings](Images/seasonal-sightings.png)
+
+### 4. Weather Conditions Impact on Sightings
+We examined whether weather conditions, such as rain or snow, had any effect on the frequency of sightings. Our results indicated that rain was the most common weather condition during sightings, while overcast weather was the least common. Additionally, a linear regression analysis on cloud cover vs. visibility showed no significant impact on the likelihood of a sighting.
+
+![Weather Analysis](Images/weather-analysis.png)
+
+### 5. Geospatial Visualization of Sightings
+We created a geospatial map visualization to show the geographic spread of Bigfoot sightings in the U.S. and Canada. Using latitude and longitude coordinates, we visualized the data points based on sighting classifications (Class A, Class B, and Class C).
+
+![Geospatial Visualization](Images/geospatial-visualization.jpg)
+
+## Conclusion
+
+This project provides valuable insights into the geographic and temporal patterns of Bigfoot sightings across the United States and Canada. Our analysis uncovered hotspots of activity, seasonal trends, and weather-related factors that may influence the frequency of sightings. The project also highlights the importance of data cleaning and transformation techniques in ensuring reliable and meaningful analysis outcomes.
+
+## Future Work
+
+- **Deep Learning**: We could explore using machine learning models to predict Bigfoot sightings based on various features such as location, weather, and seasonal patterns.
+- **Expansion**: Analyzing Bigfoot sightings in other regions of the world, particularly where Bigfoot-like creatures are reported (e.g., Yeti in the Himalayas).
+
+## Files Included
+
+- `bfro_reports_geocoded.csv`: Raw data of sightings.
+- `bfro_location.csv`: Location-based classification data.
+- `Analysis_Code.py`: Python code used for data cleaning, analysis, and visualization.
+- `Jupyter_Notebooks/`: Folder containing notebooks for each section of the analysis.
+  
 ## Credits
 
-Original data from BFRO.net
+This project was completed by the following team members:
 
-Initial data scrape and project inspiration by Timothy Renner: https://data.world/timothyrenner/bfro-sightings-data
+- Kat Chu
+- Quinn Daley
+- Mackenzie Deets
+- Oumar Diakite
+- Jacob Woolley
 
-https://www.cdc.gov/nchs/hus/sources-definitions/geographic-region.htm
+Special thanks to our course instructors and the Bigfoot Field Researchers Organization (BFRO) for providing the dataset.
 
-## Slideshow
+## License
 
-https://docs.google.com/presentation/d/104hYAXmJGT-nlYQUtEN1qszK65HI6DHoqox6D2UEqc0/edit?usp=sharing
-
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
