@@ -11,12 +11,16 @@ In this analysis, we examine Bigfoot sightings data from the Bigfoot Field Resea
 - **What environmental or situational factors are associated with Bigfoot sightings?**
 - **Are certain regions more prone to these reports?**
 
-## Data Sources
+## Data Description
+The dataset used in this project includes Bigfoot sighting reports, categorized by location, time, and environmental conditions such as weather. The data was cleaned and processed to create meaningful insights through visualization and statistical analysis.
 
-- **Data Source 1**: `bfro_reports_geocoded.csv` — Contains geocoded sightings data, including latitude, longitude, and other metadata such as date and classification of sighting.
-- **Data Source 2**: `bfro_location.csv` — Includes classification data with additional geographic details about each sighting.
-  
-This dataset was preprocessed to remove missing values and outliers before performing any analysis.
+Files used in this project:
+- **bfro_locations.csv**: The dataset containing the locations of Bigfoot sightings.
+- **bfro_reports.json**: Raw JSON data with details of individual sightings.
+- **bfro_reports_geocoded.csv**: Geocoded data for the sightings.
+- **finalNotebook.ipynb**: The Jupyter notebook containing the analysis and visualizations.
+- **timothyrenner-bfro-sightings-data**: The dataset used for the sightings analysis.
+
 
 ## Methodology
 
@@ -75,13 +79,6 @@ This project provides valuable insights into the geographic and temporal pattern
 - **Deep Learning**: We could explore using machine learning models to predict Bigfoot sightings based on various features such as location, weather, and seasonal patterns.
 - **Expansion**: Analyzing Bigfoot sightings in other regions of the world, particularly where Bigfoot-like creatures are reported (e.g., Yeti in the Himalayas).
 
-## Files Included
-
-- **bfro_locations.csv**: The dataset containing the locations of Bigfoot sightings.
-- **bfro_reports.json**: Raw JSON data with details of individual sightings.
-- **bfro_reports_geocoded.csv**: Geocoded data for the sightings.
-- **finalNotebook.ipynb**: The Jupyter notebook containing the analysis and visualizations.
-- **timothyrenner-bfro-sightings-data**: The dataset used for the sightings analysis.
   
 ## Credits
 
