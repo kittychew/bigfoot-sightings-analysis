@@ -40,7 +40,7 @@ The project applies a variety of exploratory data analysis (EDA) and statistical
 ### 1. Geographic Distribution of Sightings
 In this section, we explored the distribution of sightings across various regions of the United States. By classifying states into four regions (West, Midwest, South, Northeast), we identified areas where sightings were most common. The West and South regions stood out as hotspots for Bigfoot activity, while the Northeast showed fewer reported sightings.
 
-![Geographic Distribution](Images/geographic-distribution.jpeg)
+![Geographic Distribution](Images/geographic-distribution.jpg)
 
 ### 2. Trends in Sightings Over Time
 This analysis looked at the trends in Bigfoot sightings over the years. By examining the number of sightings per year, we explored shifts in reporting frequency and the impact of different report types on sighting trends.
@@ -60,7 +60,7 @@ We examined whether weather conditions, such as rain or snow, had any effect on 
 ### 5. Geospatial Visualization of Sightings
 We created a geospatial map visualization to show the geographic spread of Bigfoot sightings in the U.S. and Canada. Using latitude and longitude coordinates, we visualized the data points based on sighting classifications (Class A, Class B, and Class C).
 
-![Geospatial Visualization](Images/geospatial-visualization.jpeg)
+![Geospatial Visualization](Images/geospatial-visualization.jpg)
 
 ## Conclusion
 
