@@ -33,7 +33,7 @@ The project applies a variety of exploratory data analysis (EDA) and statistical
 
 ## Team Members
 
-- **Kat Chu**: Geographic analysis, state-region classification, data preprocessing, readme, slideshow
+- **Kat Chu**: Geographic analysis, state-region classification, data preprocessing, README, slideshow
 - **Quinn Daley**: Yearly and report-type analysis, trend visualization
 - **Mackenzie Deets**: Temporal analysis, seasonal distribution of sightings
 - **Oumar Diakite**: Map visualization of geographic sightings, data summary
