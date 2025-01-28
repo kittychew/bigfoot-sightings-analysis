@@ -53,6 +53,7 @@ This analysis looked at the trends in Bigfoot sightings over the years. By exami
 
 ### 3. Seasonal and Monthly Sightings Distribution
 Through this analysis, we discovered that the number of Bigfoot sightings peaks during the summer months, with a secondary peak in the fall. This trend is likely influenced by increased outdoor activities during the warmer months, such as hiking and hunting.
+![Seasonal Trends](Images/seasonal-trends.png)
 
 ![Seasonal Sightings](Images/seasonal-sightings.png)
 
@@ -68,7 +69,7 @@ Additionally, a linear regression analysis on cloud cover vs. visibility showed 
 ### 5. Geospatial Visualization of Sightings
 We created a geospatial map visualization to show the geographic spread of Bigfoot sightings in the U.S. and Canada. Using latitude and longitude coordinates, we visualized the data points based on sighting classifications (Class A, Class B, and Class C).
 
-![Geospatial Visualization](Images/geospatial-visualization.png)
+![Geospatial Visualization](Images/geographic-visualization.png)
 
 ## Conclusion
 
